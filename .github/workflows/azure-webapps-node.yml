@@ -45,7 +45,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install log bison websocket websocket-server sanitizer memcache
-        npm install --save
         node server/js/main.js
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
